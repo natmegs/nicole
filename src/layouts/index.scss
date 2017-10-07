@@ -1,0 +1,311 @@
+/*
+======================================
+VARIABLES
+======================================
+*/
+
+$shade1: #f5f5f5;
+$shade2: #bdbdbd;
+$shade3: #616161;
+$shade4: #424242;
+$shade5: #212121;
+$accent: #800000;
+
+$header: 'Vollkorn', serif;
+$body: 'Lato', sans-serif;
+
+$headerold: 'Playfair Display', serif;
+$bodyold: 'Libre Baskerville', serif;
+
+/*
+======================================
+BASE COMPONENTS
+======================================
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: $body;
+    color: $shade3;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $header;
+    color: $shade5;
+}
+
+p {
+    line-height: 1.75;
+    margin: 15px 0;
+}
+
+a {
+    border: 1px solid $shade3;
+    text-decoration: none;
+    padding: 7px;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    background-color: $shade3;
+    color: #fff;
+}
+
+h1 {
+    font-size: 500%;
+    padding: 30px;
+    border: 2px solid $shade2;
+}
+h2 {
+    font-size: 300%;
+}
+h3 {
+    font-size: 250%;
+}
+h4 {
+    font-size: 200%;
+}
+h5 {
+    font-size: 150%;
+}
+h6 {
+    font-size: 125%;
+}
+
+/*
+======================================
+NAV
+======================================
+*/
+
+.nav {
+    padding: 20px;
+    a {
+        float: right;
+        margin-right: 20px;
+    }
+}
+
+/*
+======================================
+INFO
+======================================
+*/
+
+.container {
+    padding: 40px;
+
+    .info-item {
+        display: inline-block;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        .info-item {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    }
+}
+
+/*
+======================================
+IMAGES
+======================================
+*/
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    padding-bottom: 60px;
+}
+
+.image-box {
+    width: 32%;
+    margin: 0.6%;
+    //margin: 1.6%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .image-box {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .image-box {
+        width: 92%;
+    }
+}
+
+/*
+======================================
+IMAGE HOVER
+======================================
+*/
+
+.h1 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.h1 img:hover {
+	filter: grayscale(1);
+}
+
+.h2 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.h2 img:hover {
+	filter: saturate(5);
+}
+
+.h3 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.h3 img:hover {
+	filter: hue-rotate(90deg);
+}
+
+.h4 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.h4 img:hover {
+	filter: blur(3px);
+}
+
+.h5 {
+	overflow: hidden;
+}
+.h5 img {
+	transition: all 2s ease;
+}
+.h5 img:hover {
+	transform: scale(1.2);
+}
+
+/*
+======================================
+PROFILE
+======================================
+*/
+
+.profile-container {
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.profile-photo {
+    width: 35%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.profile-desc {
+    text-align: center;
+    padding: 50px;
+    margin: 0 30px;
+    width: 35%;
+}
+
+.contact-links {
+    width: 50px;
+    text-align: center;
+
+    a {
+        display: block;
+        border: none;
+        width: 40px;
+        margin: 20px auto;
+        font-size: 200%;
+
+        span {
+            color: $shade3;
+            transition: all 0.5s ease;
+        }
+    }
+
+    a:hover {
+        background-color: #fff;
+
+        span{
+            color: $accent !important;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-photo, .profile-desc {
+        width: 45%;
+    }
+
+    .profile-desc {
+        padding: 50px 25px;
+    }
+
+    .contact-links {
+        width: 100%;
+        a {
+            display: inline-block;
+            margin: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .profile-photo, .profile-desc {
+        width: 90%;
+    }
+
+    .profile-desc {
+        padding: 50px 0;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 456px) {
+    .contact-links {
+        a {
+            margin: 0;
+            width: 22%;
+        }
+    }
+}
+
+/*
+======================================
+COMING SOON
+======================================
+*/
+
+.coming-soon {
+    padding: 80px 5%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
