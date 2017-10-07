@@ -1,0 +1,2 @@
+webpackJsonp([60335399758886],{"./node_modules/json-loader/index.js!./.cache/json/layout-index.json":function(e,o){e.exports={data:{site:{siteMetadata:{title:"Nicole"}}},layoutContext:{}}}});
+//# sourceMappingURL=path----4f153b3318f8677c4d93.js.map
